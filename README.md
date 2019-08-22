@@ -38,8 +38,7 @@
         
 > 三個任務都結束後，使用 dispatchGroup.notify(queue: .main) {} 讓文字出現在畫面上
 
-
- dispatchGroup.notify(queue: .main) {
+    dispatchGroup.notify(queue: .main) {
             self.firstAdress.text = self.firstdata?.road
             self.firstSpeed.text = self.firstdata?.speed_limit
             self.secondLabel.text = self.seconddata?.road
@@ -80,7 +79,7 @@
             
         }
         
-![](https://github.com/kbl26amy/PassValueBetweenViews/blob/master/傳值%20demo.gif?raw=true)
+![]()
 ----
 ## changelog
 * 22-Aug-2019 re-design
