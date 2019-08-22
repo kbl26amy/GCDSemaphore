@@ -85,15 +85,15 @@
 
 發 API 的過程需進行的事情：
 
+* Client  ->   Server : request time
+* Client  <-   Server : responce time
+
 1. make request
 2. send request
 3. wait for request (Responce Time)
 4. handle responce (Data -> Object) Parse Data
 
 -------------------------
-
-* Client  ->   Server : request time
-* Client  <-   Server : responce time
 
 * Group : 一次發三隻ＡＰＩ，只有花一次 responce time 的時間
 搭配 concurrent queue 讓 ＡＰＰ 效率更高
