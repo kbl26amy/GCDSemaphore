@@ -79,7 +79,7 @@
             
         }
         
-![]()
+![](https://github.com/kbl26amy/GCDSemaphore/blob/master/GCDpractice.gif?raw=true)
 ----
 ## changelog
 * 22-Aug-2019 re-design
