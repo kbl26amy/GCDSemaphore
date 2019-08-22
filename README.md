@@ -81,8 +81,25 @@
         
 ![](https://github.com/kbl26amy/GCDSemaphore/blob/master/GCDpractice.gif?raw=true)
 ----
-## changelog
-* 22-Aug-2019 re-design
+## Tips
+
+發 API 的過程需進行的事情：
+
+1. make request
+2. send request
+3. wait for request (Responce Time)
+4. handle responce (Data -> Object) Parse Data
+
+-------------------------
+
+* Client  ->   Server : request time
+* Client  <-   Server : responce time
+
+* Group : 一次發三隻ＡＰＩ，只有花一次 responce time 的時間
+搭配 concurrent queue 讓 ＡＰＰ 效率更高
+
+
+* Semaphore ：Responce 回來之後將其卡住
 
 ----
 ## thanks
