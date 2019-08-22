@@ -5,13 +5,14 @@
 使用 [臺北市固定測速照相地點表 ](https://data.taipei/#/dataset/detail?id=745b8808-061f-4f5b-9a62-da1590c049a9)
 
 > 
-利用 GCD Group 的特性，將三個 Response 的資料，同時 呈現在畫面上。
-利用 GCD Semaphore 的特性，將三個 Response 的資料，依照 offset 的順序，依序 呈現在畫面上。
+1. 利用 GCD Group 的特性，將三個 Response 的資料，同時 呈現在畫面上。
+2. 利用 GCD Semaphore 的特性，將三個 Response 的資料，依照 offset 的順序，依序 呈現在畫面上。
+
 ----
 ## 
 # GCD Group
 
-**   dispatchGroup.enter() 與 dispatchGroup.leave() **
+**dispatchGroup.enter() 與 dispatchGroup.leave()**
 
 > 在執行任務前下 enter() ，並在任務結束後下 leave()
 
@@ -36,6 +37,7 @@
         }).resume()
         
 > 三個任務都結束後，使用 dispatchGroup.notify(queue: .main) {} 讓文字出現在畫面上
+
 
  dispatchGroup.notify(queue: .main) {
             self.firstAdress.text = self.firstdata?.road
